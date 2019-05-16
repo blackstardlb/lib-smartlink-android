@@ -1,11 +1,11 @@
-apply plugin: 'android-library'
+apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 18
-    buildToolsVersion "19.1.0"
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
 
     defaultConfig {
-        minSdkVersion 18
+        minSdkVersion 21
         versionCode 201
         versionName "2.0.1"
     }
@@ -29,8 +29,8 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:19.1.0'
-    compile files('libs/dd-plist.jar')
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation files('libs/dd-plist.jar')
 }
 
 task clearJar(type: Delete) {
